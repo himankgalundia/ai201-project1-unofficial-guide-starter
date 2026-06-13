@@ -1,0 +1,29 @@
+Source: Rate My Professors — Georgia Tech CS 1331 (Introduction to Object-Oriented Programming)
+URL: https://www.ratemyprofessors.com (manually collected, November 2024)
+Course: CS 1331 — Introduction to Object-Oriented Programming (Java)
+
+---
+
+Review 1 (Professor: Thomas Ploeger, Rating: 4/5)
+CS 1331 is a step up from CS 1301 in terms of difficulty and abstraction. The shift from Python to Java is jarring at first — you have to deal with static typing, compilation errors, and verbose syntax. Ploeger does a good job explaining OOP concepts like inheritance, polymorphism, and interfaces with real examples. The homework assignments are longer than 1301 and require more careful design. Expect to spend 6-10 hours per week on coursework. There are three exams: two midterms and a final, all on paper with written code. Practicing writing Java by hand (without an IDE) before exams is essential.
+
+Review 2 (Professor: Thomas Ploeger, Rating: 5/5)
+Ploeger is one of the best CS professors I've had at Tech. He is very organized and explains abstract concepts like generics and exception handling clearly. The recitations are mandatory and worth attending — the TA-led recitations clarify confusing lecture topics with practice problems. The HW assignments are graded on both correctness and code style (Checkstyle is used, so make sure your formatting matches the style guide). The gradescope autograder gives partial credit, so always submit even if your code isn't fully working. Office hours are helpful but crowded before deadlines.
+
+Review 3 (Anonymous, Rating: 3/5)
+CS 1331 has a steep learning curve in the first few weeks. The jump from Python's dynamic typing to Java's static typing confused a lot of people in my section. The homework requires reading the javadoc carefully, especially for the abstract class and interface assignments. I recommend using IntelliJ IDEA for development — it has much better error highlighting than Eclipse and makes debugging faster. The exams test your understanding of the OOP hierarchy: make sure you can trace through code involving inheritance chains and method overriding. Study the practice exams posted on the course website.
+
+Review 4 (Professor: Thomas Ploeger, Rating: 4/5)
+The most important thing in CS 1331 is to understand the object-oriented model before the second exam. Concepts like polymorphism, abstract classes, and interfaces all build on each other. If you memorize how Java handles method dispatch, the exam questions become straightforward. The assignments are autograded on Gradescope but you also get a style grade — zero tolerance for long methods, magic numbers, or poor variable naming. The late policy is strict: -10% per day up to 3 days, then 0. Start assignments early because compilation errors alone can eat hours.
+
+Review 5 (Professor: James Landrum, Rating: 3/5)
+I had Landrum for CS 1331 and his lectures were okay but not as polished as Ploeger's. He sometimes went off on tangents and we fell behind the schedule. The course content is the same: Java OOP, exception handling, generics, file I/O, and data structures like ArrayList and LinkedList. The midterms were fair but the final felt rushed in terms of prep time — we covered lambdas and streams in the last two weeks and they showed up heavily on the final. Make sure you practice lambda expressions and the Stream API before the final.
+
+Review 6 (Anonymous, Rating: 5/5)
+CS 1331 is the most important foundational CS course at Tech. If you truly understand what you do here — classes, inheritance, interfaces, generics, exceptions — all the subsequent courses (CS 1332, CS 2340, CS 4400) will make much more sense. Do not skip the readings. The textbook is not required but the Oracle Java documentation is your best friend. Use EdStem for questions — the TAs usually respond within a few hours. The professor posts optional practice problems every week; doing them is the single biggest thing you can do to prepare for exams.
+
+Review 7 (Professor: Thomas Ploeger, Rating: 4/5)
+Grading breakdown for Ploeger's section: 40% homework (6 major HW assignments), 20% midterm 1, 20% midterm 2, 20% final. The homework assignments cover: basic Java syntax, classes, inheritance, abstract classes/interfaces, exceptions and file I/O, generics, and a culminating project that combines all topics. The final project is usually a text-based game or a data processing application — it's larger than the regular HWs and takes about 10-15 hours. Checkstyle errors count against your grade so fix them before submitting.
+
+Review 8 (Anonymous, Rating: 2/5)
+The autograder tests can be frustratingly picky. I submitted code that worked perfectly in IntelliJ but failed on the autograder because of a whitespace issue in printed output. The TAs were helpful in explaining why, but losing points for that felt unfair. The course material itself is well-structured and important — just be aware that the autograder tests edge cases aggressively. Always test your code with edge inputs: null values, empty arrays, negative numbers, very large inputs. The TAs hold debugging office hours twice a week which are very useful for catching these issues early.

@@ -1,0 +1,65 @@
+Source: Reddit r/gatech — Thread: "CS 1331 tips and resources?"
+URL: https://www.reddit.com/r/gatech (manually collected, November 2024)
+Thread posted: Spring 2024
+
+---
+
+Post (u/java_newbie_gt):
+Starting CS 1331 next semester. Coming from 1301 where I did okay (B). Is 1331 a big jump? What should I do to prepare?
+
+---
+
+Top comment (u/cs_sophomore_gt, 1.2k upvotes):
+CS 1331 is a significant but manageable step up from 1301. The main challenges:
+
+1. Java syntax is more verbose than Python. Expect to write 3x more lines for the same logic.
+2. You have to think in terms of objects, classes, and types from day one — there's no gradual buildup like in 1301.
+3. The autograder uses Checkstyle to enforce code style. A missing space or a method that's too long will cost you points even if your code is logically correct.
+
+To prepare: install IntelliJ IDEA (the free Community Edition is fine). Read the first two chapters of "Introduction to Java" (Liang) or just work through some Java tutorials on YouTube. The first two weeks of 1331 move fast.
+
+---
+
+Comment (u/cs_ta_anonymous):
+Current CS 1331 TA. Things that trip students up most:
+
+**Inheritance and polymorphism**: Many students memorize the syntax but don't understand when a method is overridden vs. overloaded. Know the difference: overriding is replacing a parent's method in a subclass; overloading is multiple methods with the same name but different parameter types.
+
+**Static vs. instance**: When should a field or method be static? Rule of thumb: if it belongs to the class as a whole (not any specific object), make it static. Class-level counters, utility methods, and constants are usually static.
+
+**Abstract classes vs. interfaces**: This comes up on every exam. Abstract class: can have instance fields, constructors, and implemented methods. Interface: no instance fields (only static final constants), all methods are abstract by default (Java 8+ has default methods). Use an abstract class when subclasses share state; use an interface when you want to define a contract.
+
+---
+
+Comment (u/upperclassman_advice):
+The most important resource for CS 1331 is EdStem (the Q&A forum). Before every major assignment deadline, the TAs post FAQs answering the most common questions. Read these before going to office hours. Office hours lines during the week before a homework deadline can be 2-3 hours long — submit your question online in the queue ahead of time.
+
+The recitations are where you actually learn to apply the concepts from lecture. Recitation TAs do worked examples that are similar to exam questions. If you don't go to recitation, you're essentially studying without worked examples — much less effective.
+
+---
+
+Comment (u/debugging_java_tips):
+Java debugging tips for CS 1331:
+
+1. Read the stack trace. The first line tells you the exception type and message. The next lines tell you exactly which method calls led to the error. Most NullPointerExceptions can be diagnosed in 30 seconds by reading the stack trace.
+
+2. Use IntelliJ's debugger, not print statements. Set a breakpoint, run in debug mode, and inspect variable values at the point of failure. This alone will cut your debugging time in half.
+
+3. Common errors in CS 1331: ClassCastException (you cast to the wrong type — check instanceof before casting), NullPointerException (you're calling a method on a null reference — check for null), ArrayIndexOutOfBoundsException (off by one in a loop — check boundary conditions).
+
+4. When the autograder fails but your code works in IntelliJ: check if you're printing when you should be returning. Check if your output has extra whitespace or newlines. Check that you spelled class names exactly as specified in the assignment.
+
+---
+
+Comment (u/gt_cs_resource_guide):
+Best external resources for CS 1331:
+- Oracle Java 11 Documentation: the authoritative reference for any Java class or method
+- "Head First Java" book: highly visual, good for beginners to OOP concepts
+- Coding Bat (Java section): free practice problems, great for warming up before exams
+- CS 1331 course website: past exams and practice problems posted here — do every one
+- YouTube: "Java OOP Concepts" by Derek Banas is a solid 1-hour overview
+
+---
+
+Comment (u/exam_strategy_1331):
+CS 1331 exam format: roughly 60% multiple choice (tracing code, identifying output, spotting errors) and 40% free response (write Java methods or classes from scratch). The hardest multiple choice questions involve tracing through code with inheritance chains — figure out at runtime which method actually executes when you call an overridden method on a parent reference. Study "dynamic dispatch" carefully. For free response, practice writing constructors, getters/setters, equals/toString/compareTo methods, and a simple inheritance hierarchy from scratch.

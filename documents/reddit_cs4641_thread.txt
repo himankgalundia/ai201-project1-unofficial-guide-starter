@@ -1,0 +1,77 @@
+Source: Reddit r/gatech — Thread: "CS 4641 Machine Learning — worth it? Tips?"
+URL: https://www.reddit.com/r/gatech (manually collected, November 2024)
+Thread posted: Fall 2024
+
+---
+
+Post (u/ml_curious_gt):
+Thinking about taking CS 4641 next semester. Is it worth the hype? How hard is it really? Background: took CS 1332 and MATH 3215, comfortable with Python.
+
+---
+
+Top comment (u/ml_engineer_grad, 892 upvotes):
+CS 4641 is absolutely worth taking — it's one of the best courses offered in the CS program. Here's the honest breakdown:
+
+**Difficulty**: 7/10. Not as theoretically brutal as CS 3510, but requires consistent effort because the material builds week to week. Missing a lecture puts you a real disadvantage.
+
+**Math requirement**: If you're shaky on linear algebra (matrix operations, eigenvalues) or probability (Bayes' theorem, expectation, variance), you'll struggle on the exam math. The homework implementations are less math-heavy but the exams test derivations.
+
+**Python**: You'll use numpy heavily. Know how to vectorize operations (avoid Python loops, use matrix operations instead). This is tested on the homework and knowing it speeds up your assignments dramatically.
+
+**Project**: The team project is a large portion of your grade (25-30%). Pick a topic you're actually interested in — you'll be working on it for 3 months.
+
+---
+
+Comment (u/cs4641_ta_advice):
+CS 4641 TA here. The most common mistake I see students make on homework: implementing algorithms with Python loops instead of vectorized numpy operations.
+
+Example — computing pairwise distances between N data points:
+- Bad: nested for loops, O(N²) in pure Python — takes 5+ minutes for N=1000
+- Good: `np.linalg.norm(X[:, None] - X[None, :], axis=-1)` — runs in under a second
+
+The homework autograder has time limits. If your implementation is too slow, it will time out even if the output is correct. Learn numpy vectorization early.
+
+For the written portions: show all your math work. Even if your final answer is wrong, partial credit is given for correct intermediate steps.
+
+---
+
+Comment (u/interview_prep_advice):
+CS 4641 is excellent for ML interview prep. The concepts tested in ML interviews overlap heavily with this course: overfitting vs. underfitting, bias-variance tradeoff, regularization (L1 vs. L2), cross-validation, train/test split, decision trees (information gain, gini impurity), random forests (bagging), SVMs (kernel trick, margin), neural networks (forward/backprop, activation functions), and clustering (k-means, convergence guarantees).
+
+After CS 4641, I felt prepared for ML engineer interviews at mid-tier companies. For FAANG-level ML roles, you'd want to also study deep learning frameworks (PyTorch, TensorFlow) and take CS 7643 (Deep Learning).
+
+---
+
+Comment (u/team_project_tips):
+Team project advice for CS 4641:
+
+1. Choose your team carefully. One motivated teammate matters more than three bodies who don't pull their weight. Form teams with people you've worked with before if possible.
+
+2. For the dataset: use a publicly available dataset from Kaggle or UCI ML Repository. Make sure your dataset has at least 1000 rows (too small = no statistical power) and at least 5 features (too few = boring analysis).
+
+3. For the proposal: describe your dataset, your prediction task (classification or regression), your baseline model (logistic regression or linear regression), and your planned ML methods. The proposal is graded leniently.
+
+4. For the final report: you need results showing your model outperforms the baseline. Show a learning curve, confusion matrix, and cross-validation score. Include error analysis: which types of examples does your model get wrong and why?
+
+5. Start the project by week 3. Teams that wait until the midpoint deadline to start do poorly on the final report.
+
+---
+
+Comment (u/course_grading_breakdown):
+CS 4641 grading breakdown (Mahdi Roozbahani's section, Fall 2024):
+- Homework assignments (5 total): 35%
+- Team project (proposal + midpoint + final + presentation): 30%
+- Midterm exam: 15%
+- Final exam: 20%
+
+The homework assignments are in Jupyter notebooks. Submitted through Gradescope. Late policy: -10% per day, max 3 days late. After 3 days, score is 0.
+
+The midterm covers supervised learning (weeks 1-8). The final is cumulative, weighted heavily toward unsupervised learning, neural networks, and whatever was covered in weeks 9-16.
+
+---
+
+Comment (u/underrated_aspects):
+Underrated parts of CS 4641:
+- The Kaggle competition (optional extra credit): even finishing in the top half earns you bonus points. The process of iteratively improving your model is the best learning experience in the course.
+- Industry speaker sessions: every 3 weeks approximately, a practitioner presents how ML is actually used at their company. These are often more useful than textbook learning for understanding where the field is going.
+- The TA-held office hours before exams are excellent: TAs go through practice exam problems with explanations. Attendance is small enough that you can ask specific questions.

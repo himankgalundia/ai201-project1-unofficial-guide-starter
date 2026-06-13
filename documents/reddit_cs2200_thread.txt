@@ -1,0 +1,62 @@
+Source: Reddit r/gatech — Thread: "CS 2200 project help and tips"
+URL: https://www.reddit.com/r/gatech (manually collected, November 2024)
+Thread posted: Spring 2024
+
+---
+
+Post (u/systems_struggling):
+Just got my first CS 2200 project back. Cache simulator. Got 40/100. Never worked in C before. Help?
+
+---
+
+Top comment (u/systems_expert_gt, 723 upvotes):
+C programming requires a fundamentally different mental model than Java or Python. In Java, the garbage collector cleans up your memory. In C, you manage memory yourself with malloc and free. Every malloc must have a corresponding free — if you forget to free, you have a memory leak.
+
+For the cache simulator specifically: draw the cache on paper first. A cache has S sets, each with E lines, each line holding B bytes. A memory address is divided into: tag bits (top bits, identifies which block of memory), set index bits (middle bits, which set in the cache), and block offset bits (bottom bits, which byte within the block). Implement the address parsing first and test it with known addresses before implementing the cache logic.
+
+Use printf debugging initially — print the tag, set index, and offset for each memory access and compare against your hand-computed values for a simple trace.
+
+---
+
+Comment (u/c_programming_guide):
+Common C bugs in CS 2200 projects and how to fix them:
+
+**Segmentation fault**: You're accessing memory you don't own. Causes: dereferencing a null pointer, accessing an array out of bounds, using a pointer after freeing it. Fix: compile with -g flag and run in gdb. When the seg fault occurs, type "bt" (backtrace) to see which line caused it.
+
+**Memory leak**: You malloc'd memory but never freed it. Fix: run Valgrind. "Valgrind --leak-check=full ./your_program args" will show every malloc that wasn't freed. In CS 2200, the autograder checks for memory leaks — even a small leak will cost you points.
+
+**Off-by-one in bit manipulation**: For the cache simulator, if your set index or tag extraction is wrong by one bit, every access will be a miss. Double-check your bit shift amounts: if block offset is b bits and set index is s bits, the set index starts at bit b and ends at bit (b+s-1).
+
+**Stack overflow**: In the thread library project, if your stack is too small or you write past the end, you get a corrupted stack. Make sure your stack allocation is large enough.
+
+---
+
+Comment (u/project3_thread_tips):
+Project 3 (thread library) tips since this is where most students struggle:
+
+The thread library implements cooperative threading — threads run until they explicitly yield. The key data structure is the Thread Control Block (TCB): a struct that stores each thread's saved registers and stack pointer. When a thread yields, its register state is saved into its TCB; when it resumes, registers are restored from its TCB.
+
+The provided ucontext.h functions (getcontext, makecontext, swapcontext) handle the actual context switch. Read the man page for these functions carefully. swapcontext atomically saves the current context to one struct and restores from another — this is the core of the context switch.
+
+Mutex implementation: a mutex has a lock bit and a queue of waiting threads. When a thread tries to lock a held mutex, it adds itself to the wait queue and yields. When the mutex holder calls unlock, it dequeues a waiting thread and makes it runnable. Implement this carefully — race conditions in the mutex implementation are subtle bugs.
+
+---
+
+Comment (u/exam_tips_2200):
+CS 2200 midterm covers: processor ISA (instruction formats, addressing modes), datapath design, pipelining (stages, hazards, forwarding), memory hierarchy (cache, virtual memory).
+
+The most commonly tested problem type: give a sequence of memory accesses, determine which are hits and which are misses for a given cache configuration (set size, associativity, block size), and compute the hit rate.
+
+Another common problem: given a virtual address, decompose it into page number and page offset. Given a page table, look up the physical address. Compute whether a TLB lookup would hit or miss given the current TLB state.
+
+The final exam covers everything, but adds: concurrency (race conditions, deadlock conditions, mutex correctness) and networking (TCP/IP layers, reliable data transfer, flow control basics).
+
+---
+
+Comment (u/resources_cs2200):
+Best resources for CS 2200:
+1. The textbook written by Ramachandran — actually very readable and specific to the course.
+2. The lecture slides (very detailed, often contain examples not covered in lectures due to time).
+3. The CS 2200 Piazza is well-monitored by TAs — response time is usually under 2 hours.
+4. For C programming: "The C Programming Language" (K&R) is the classic reference. Chapter 5 (pointers) and Chapter 6 (structures) are the most relevant for CS 2200.
+5. YouTube: "CS50" from Harvard covers C basics well. The first 3 lectures are relevant for CS 2200 project work.

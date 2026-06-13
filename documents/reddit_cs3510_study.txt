@@ -1,0 +1,83 @@
+Source: Reddit r/gatech — Thread: "CS 3510 midterm survival guide?"
+URL: https://www.reddit.com/r/gatech (manually collected, November 2024)
+Thread posted: Spring 2024
+
+---
+
+Post (u/algorithms_anxiety):
+CS 3510 midterm is in two weeks and I'm panicking. We've covered divide and conquer, dynamic programming, and greedy algorithms so far. Any advice for studying?
+
+---
+
+Top comment (u/theory_cs_phd, 1.5k upvotes):
+CS 3510 is the hardest required course for most CS students at Tech. Here's a proven study approach:
+
+**For dynamic programming (most heavily tested topic):**
+Every DP problem has the same structure. Practice identifying it:
+1. What is the subproblem? Define it formally: "Let OPT(i) = the optimal value considering the first i elements."
+2. What is the recurrence? Express OPT(i) in terms of smaller subproblems.
+3. What are the base cases?
+4. What is the time complexity? (Usually O(n) or O(n²) for 1D DP, O(nm) for 2D.)
+
+If you practice 10-15 DP problems following this template, the exam questions become recognizable patterns. Common patterns: longest common subsequence, edit distance, weighted interval scheduling, knapsack (0/1 and fractional), and matrix chain multiplication.
+
+---
+
+Comment (u/algo_tutor_gt):
+**For greedy algorithms:**
+The tricky part is proving that a greedy choice is globally optimal. The standard proof technique is the exchange argument:
+
+1. Assume there exists an optimal solution OPT that differs from the greedy solution G.
+2. Find the first point where they differ.
+3. Show that you can modify OPT to agree with G at that point without making OPT worse.
+4. Conclude that the greedy choice is at least as good as any other choice, so greedy is optimal.
+
+You must be able to write out this proof structure for the interval scheduling problem and the fractional knapsack problem. These are classic examples that show up in exams.
+
+---
+
+Comment (u/masters_student_cs):
+**For divide and conquer:**
+Key examples: merge sort, quick sort, binary search, Karatsuba multiplication, Strassen's matrix multiplication.
+
+For each, you need to: (1) write the recurrence, (2) solve it using the Master Theorem.
+
+Master Theorem: T(n) = aT(n/b) + f(n)
+- Case 1: if f(n) = O(n^(log_b(a) - ε)), then T(n) = Θ(n^log_b(a))
+- Case 2: if f(n) = Θ(n^log_b(a)), then T(n) = Θ(n^log_b(a) · log n)
+- Case 3: if f(n) = Ω(n^(log_b(a) + ε)) and the regularity condition holds, then T(n) = Θ(f(n))
+
+Practice applying Master Theorem to at least 10 examples so you can apply it quickly under exam pressure.
+
+---
+
+Comment (u/cs3510_exam_survivor):
+The exam format for CS 3510 (based on past exams): 3-4 problems, each with multiple sub-parts. Each problem is worth 25-35 points. The total exam is 100 points and you have 75-80 minutes.
+
+Problem types that appear every semester:
+1. Given an optimization problem, design a DP algorithm: define subproblem, write recurrence, analyze complexity.
+2. Prove that a greedy strategy is optimal using an exchange argument.
+3. Analyze a given algorithm's time complexity using Master Theorem or substitution.
+4. Graph problem: reduce a given problem to a known graph problem (shortest path, MST, flow).
+
+The median on midterms is historically 55-65/100. The curve at the end of the semester typically brings medians to B range. Do not despair if you get a 55 — keep working.
+
+---
+
+Comment (u/study_group_wisdom):
+Best resources for CS 3510:
+1. CLRS (Introduction to Algorithms, Cormen et al.): The canonical textbook. Read the chapters that correspond to your current unit — they have much more detail than the slides.
+2. Past CS 3510 exams on the course website: The single most valuable resource. The professor reuses problem styles year after year.
+3. MIT 6.006 lecture notes and videos (free online): Similar material, very well explained, good alternative perspective.
+4. The CS 3510 Piazza/EdStem: Check for clarifications before interpreting a homework problem.
+
+Form a study group. Do problems together out loud. When you explain your solution to someone else, you discover the holes in your own understanding.
+
+---
+
+Comment (u/npc_completeness_help):
+For NP-completeness (last third of the course): You need to prove a problem X is NP-complete by reducing a known NP-complete problem Y to X.
+
+Reduction structure: Given an instance of Y, construct an instance of X (in polynomial time) such that Y has a solution if and only if X has a solution. You must prove both directions of the if-and-only-if.
+
+Start from 3-SAT (the mother of all NP-complete problems). Common reductions: 3-SAT → Independent Set, Independent Set → Vertex Cover, Vertex Cover → Set Cover. Know at least two of these reductions in detail and be able to explain why the reduction is correct.

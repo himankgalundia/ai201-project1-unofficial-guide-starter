@@ -1,0 +1,60 @@
+Source: Reddit r/gatech — Thread: "Tips for CS 1301 survival?"
+URL: https://www.reddit.com/r/gatech (manually collected, November 2024)
+Thread posted: Fall 2024
+
+---
+
+Post (u/yellowjacket_coder):
+Just started CS 1301 and feeling overwhelmed. Never coded before. Any tips from people who've taken it?
+
+---
+
+Top comment (u/gt_cs_senior, 847 upvotes):
+CS 1301 is genuinely one of the more manageable courses at Tech as long as you don't fall behind. Here's what worked for me:
+
+1. Do the weekly labs on time. They compound — lab 4 builds on lab 3 and so on. If you skip one and don't understand the concepts, you'll be lost for the rest.
+
+2. The autograder on Gradescope will be your best friend and your worst enemy. Always read the error messages carefully. If it says "expected output: 42, got: 42.0" your code is producing a float instead of an int — type matters.
+
+3. Practice recursion more than anything else. It shows up on both midterms and the final. Write out the call stack on paper for simple examples (factorial, fibonacci, list reversal) until you can do it in your sleep.
+
+4. Office hours for CS 1301 TAs are available like 15 hours a week. Use them. The TAs are undergrads who recently took the course and remember exactly what confused them.
+
+---
+
+Comment (u/cs1301_survivor):
+Things nobody tells you about CS 1301:
+
+- Python indentation errors will ruin your submissions. Set up your editor to show whitespace characters.
+- The autograder doesn't give you the test cases — it just says pass or fail. Write your own tests that cover edge cases.
+- The midterm format: 20 multiple choice + 3 coding questions where you write Python by hand. Practicing writing code without autocomplete is crucial.
+- The Piazza/EdStem forum is gold. Before asking a question, search it first — your question has probably been asked 10 times.
+- You're allowed a one-page cheat sheet for both midterms. Make it count — put the syntax you always forget, not concepts.
+
+---
+
+Comment (u/second_year_ie):
+Former CS 1301 TA here. Things I saw students struggle with most:
+
+1. Not understanding the difference between printing a value and returning a value. These are not the same thing. Many students write "print(x)" inside a function when they should write "return x". This breaks the autograder because it captures return values, not print output.
+
+2. Not testing with edge cases. Always test with: empty input, single element, negative numbers, very large numbers.
+
+3. Debugging by adding print statements everywhere instead of reading the error message. Python error messages tell you the line number and the type of error. Read them before guessing.
+
+---
+
+Comment (u/freshmanCS):
+Tips for the final specifically: The final is cumulative but about 40% of the questions are on material from the last 4 weeks (file I/O, object-oriented basics, exceptions). The professor posts a study guide 2 weeks before the final that lists every topic that will be tested. Study from that guide, not just your notes. The final is 3 hours and most people finish with time to spare — don't rush.
+
+---
+
+Comment (u/gt_grad_student):
+One underrated tip: Python documentation. When you're stuck on how to use a built-in function (list methods, string methods, dictionary methods), the official Python docs are clearer than any YouTube tutorial. Learn to read documentation — it's a skill you'll use for the rest of your career.
+
+Also: the "for x in list" pattern and the "for i, x in enumerate(list)" pattern come up constantly. Make sure you understand both. A lot of exam questions involve iterating through lists with specific access patterns.
+
+---
+
+Comment (u/cs_junior_advice):
+CS 1301 workload summary: 1-2 hours per week for lecture/class, 2-4 hours per week for the weekly lab assignment, 4-8 hours every few weeks for the larger homework projects. Total: maybe 6-10 hours per week on average, spikier during big assignment weeks. This is doable alongside other courses but don't take a heavy courseload your first semester while also taking 1301.

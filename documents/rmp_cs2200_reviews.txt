@@ -1,0 +1,29 @@
+Source: Rate My Professors — Georgia Tech CS 2200 (Systems and Networks)
+URL: https://www.ratemyprofessors.com (manually collected, November 2024)
+Course: CS 2200 — Systems and Networks
+
+---
+
+Review 1 (Professor: Umakishore Ramachandran, Rating: 4/5)
+CS 2200 is one of the most important and most challenging courses in the CS curriculum. You will learn how computers actually work: processor design, instruction sets, pipelining, memory hierarchy, caching, virtual memory, concurrency, and networking. Professor Ramachandran is a legend at GT — he co-wrote the textbook for this course. Lectures are dense but he explains things very clearly with lots of analogies. The programming projects are in C, which is jarring if you've only done Java. Expect pointer bugs. The course takes about 15-20 hours per week during project weeks.
+
+Review 2 (Professor: Umakishore Ramachandran, Rating: 5/5)
+CS 2200 made me a much better programmer. Writing a thread library from scratch in C (Project 3) was the hardest thing I'd done at Tech up to that point, but completing it taught me more about operating systems than any lecture could. The projects are autograded but the output must match exactly — diff-based grading means one extra newline character fails the whole test. Professor Ramachandran's office hours are always packed. The TAs are knowledgeable but have high office hours during project deadlines only. Plan to be done 2 days before deadline to ask questions.
+
+Review 3 (Anonymous, Rating: 3/5)
+The four major projects in CS 2200 are: (1) implement a simple processor in CircuitSim, (2) build a cache simulator in C, (3) implement a user-level thread library in C, (4) implement a network routing simulation. Projects 3 and 4 are the hardest. Project 3 (threads) requires understanding mutexes, condition variables, and context switching at a very low level. The exams cover everything from instruction sets to TCP/IP — very broad. Study past exams, which are posted on the course website, and do the practice problems in the textbook.
+
+Review 4 (Professor: Umakishore Ramachandran, Rating: 4/5)
+Grade breakdown for CS 2200: roughly 50% projects, 25% midterm, 25% final. The midterm covers everything up to pipelining. The final is cumulative with heavy emphasis on virtual memory, caching, and concurrency. The exams have a mix of multiple choice, short answer, and multi-step problems where you trace through a memory access sequence or pipeline execution. The hardest exam questions are usually on cache performance (hit rate calculations) and virtual memory address translation. Know how TLBs work and how to trace through a multi-level page table.
+
+Review 5 (Anonymous, Rating: 2/5)
+I struggled significantly in CS 2200. The jump to C programming from Java is brutal — memory management, pointer arithmetic, and segfaults are a whole new class of bugs that don't appear in Java. I recommend taking CS 2200 after you have some C experience or alongside a course that teaches systems concepts. The office hour queues during project weeks are extremely long (sometimes 3-4 hour waits). Use the online queue system and submit your position early. The debugger (gdb) is your best friend — learn to use it before project 1.
+
+Review 6 (Anonymous, Rating: 4/5)
+Tips that helped me get through CS 2200: (1) Learn gdb and Valgrind before the semester starts. (2) Draw out your data structures on paper before coding. (3) For the cache simulator, trace through a small example by hand before implementing. (4) For the thread library, read the provided starter code very carefully — the context-switch mechanism is already partially implemented. (5) Start each project at least one week before the deadline. (6) The textbook (written by Ramachandran) is actually very readable and worth studying from, not just the slides.
+
+Review 7 (Professor: Umakishore Ramachandran, Rating: 5/5)
+What I appreciate most about CS 2200 is that it connects concepts that seemed disconnected before. You understand why cache misses are expensive, why context switching has overhead, why network latency matters. After CS 2200 I understood why certain software design decisions exist — like why you should avoid large heap allocations in hot loops or why you shouldn't spawn threads for tiny tasks. This kind of systems thinking is invaluable for any software engineering role. The course is hard but very much worth the effort.
+
+Review 8 (Anonymous, Rating: 3/5)
+CS 2200 is one of those courses where the difficulty depends a lot on your prior experience. Students with C or systems experience find it challenging but manageable. Students coming straight from CS 1332 with Java experience find the first few weeks very disorienting. The assembly language portion (weeks 2-3) trips people up because the programming model is so different. I recommend practicing writing LC-2200 (the course's custom assembly language) programs by hand before the exam. The exam will ask you to write short programs in this assembly language.

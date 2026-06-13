@@ -1,0 +1,29 @@
+Source: Rate My Professors — Georgia Tech CS 3510 (Design and Analysis of Algorithms)
+URL: https://www.ratemyprofessors.com (manually collected, November 2024)
+Course: CS 3510 — Design and Analysis of Algorithms
+
+---
+
+Review 1 (Professor: Santosh Vempala, Rating: 4/5)
+CS 3510 is the hardest required CS course at Georgia Tech for most students. The course covers: divide and conquer, dynamic programming, greedy algorithms, graph algorithms (shortest paths, MSTs, network flow), NP-completeness, randomized algorithms, and linear programming. Professor Vempala is a brilliant researcher but his lectures are very theoretical — you need to study the textbook (CLRS) alongside the slides. The exams are closed-book and require proving that algorithms are correct and analyzing their time complexity. Practice writing formal proofs before the first exam.
+
+Review 2 (Professor: Santosh Vempala, Rating: 3/5)
+Vempala's lectures move fast. He writes pseudocode on the board and proves correctness simultaneously, which is hard to follow in real time. The best strategy is to watch the recorded lectures (if available) at 0.75x speed and pause to think through each step. The problem sets are where real learning happens — they are challenging and require genuine problem-solving, not just applying a template. Working in study groups is strongly encouraged and very helpful. The TAs hold weekly recitations that go through past exam problems — do not skip these.
+
+Review 3 (Anonymous, Rating: 4/5)
+The grade breakdown in CS 3510: approximately 30% homework (4-5 problem sets), 35% midterm, 35% final. There is no programming component — this is a pure math/theory course. All work is written proofs and algorithm design on paper. The homework is submitted on paper and graded by TAs. Partial credit is generous if you show your reasoning even when the final answer is wrong. On exams, write down your approach and reasoning even if you can't complete a proof — partial credit can be the difference between a B and a C.
+
+Review 4 (Professor: Richard Peng, Rating: 5/5)
+Peng is an exceptional professor for CS 3510. He is patient, responds to questions clearly, and his proof explanations are some of the clearest I've encountered. With Peng, the lectures cover the same material as other sections but are more accessible. He emphasizes understanding WHY algorithms work rather than just memorizing them. His office hours are well-attended but he takes time with each student. The problem sets with Peng are challenging but fair. I came in worried about this course and left with an A and a genuine appreciation for algorithm design.
+
+Review 5 (Anonymous, Rating: 3/5)
+Study strategy that worked for me in CS 3510: (1) For each algorithm category, solve at least 5 practice problems from CLRS and past problem sets. (2) For dynamic programming, always define the subproblem formally before writing any recurrence. A poorly defined subproblem leads to an incorrect recurrence every time. (3) For NP-completeness, practice reduction proofs — you need to show both direction of the reduction and that it runs in polynomial time. (4) For graph algorithms, know Dijkstra's, Bellman-Ford, Floyd-Warshall, and their exact time complexities and when to use each.
+
+Review 6 (Professor: Santosh Vempala, Rating: 2/5)
+CS 3510 nearly destroyed my GPA. The exams are extremely difficult — the median on the midterm was in the 50s. Even students who felt prepared were caught off guard by the difficulty of the proof questions. The class is curved, which helps, but the curve is applied at the end of the semester not per exam. If you struggle on the midterm, keep going — many students recover significantly by the final. The homework partial credit system is forgiving for written work. Do not give up after a bad midterm score.
+
+Review 7 (Anonymous, Rating: 4/5)
+The most commonly tested topics in CS 3510 exams: (1) Dynamic programming — define subproblem, write recurrence, analyze time and space complexity. (2) Greedy algorithms — prove exchange argument. (3) Graph reductions — reduce a new problem to a known graph problem. (4) NP-completeness — reduction from 3-SAT or known NP-complete problems. (5) Divide and conquer with recurrence relations solved by Master Theorem. Know the Master Theorem cold — what the three cases are and the conditions for each case.
+
+Review 8 (Professor: Richard Peng, Rating: 5/5)
+Tips for succeeding in CS 3510: Form a study group of 3-4 people for the problem sets. Discuss problems out loud — the act of explaining your approach to others reveals gaps in your reasoning. For dynamic programming, start by identifying what the optimal substructure is. For greedy algorithms, think about what the greedy choice is and prove it doesn't violate optimality. Past exam questions from the CS 3510 course website are the best study resource available — the exam style stays consistent year to year. Do every past exam under timed conditions.

@@ -1,0 +1,29 @@
+Source: Rate My Professors — Georgia Tech CS 1301 (Introduction to Computing)
+URL: https://www.ratemyprofessors.com (manually collected, November 2024)
+Course: CS 1301 — Introduction to Computing
+
+---
+
+Review 1 (Professor: Aibek Musaev, Rating: 4/5)
+CS 1301 is a great intro course if you have never coded before. Professor Musaev explains Python concepts clearly and gives a lot of in-class examples. The homeworks are weekly and each one takes about 1-3 hours depending on your background. There are two midterms and a final, all multiple choice plus a few short coding questions. I came in with zero programming experience and passed with a B+. Attend every class — the lecture slides alone are not enough, he draws a lot of diagrams on the board.
+
+Review 2 (Professor: Aibek Musaev, Rating: 5/5)
+Easily one of the most manageable CS core courses. Lectures are engaging and the professor is approachable. Office hours are packed, so go early in the week before homework is due. The grading breakdown is: 40% homework, 30% midterms (two total), 30% final. If you keep up with the weekly labs you will be fine. The hardest part is the week on recursion — make sure you really understand the call stack before the exam.
+
+Review 3 (Professor: Mehdi Naderi Parizi, Rating: 3/5)
+CS 1301 with this professor was okay but the lectures could be hard to follow. He reads off slides a lot. The content itself is straightforward — Python syntax, loops, functions, lists, dictionaries, file I/O, and recursion. The homeworks are autograded through Gradescope so you get immediate feedback. I recommend using the Python documentation and GeeksForGeeks for extra practice. Midterms are easier than I expected; final covers everything. Lab attendance is mandatory and each lab is worth a small number of points.
+
+Review 4 (Professor: Aibek Musaev, Rating: 5/5)
+This course is a good foundation for the rest of the CS degree. The workload is reasonable: around 5-8 hours per week including lab. There are no surprise assignments — the syllabus is clear from day one. I suggest forming a study group early. The debugging assignments in the second half of the semester trip people up because you have to read someone else's buggy code. The final exam is cumulative but heavily weighted toward the second half of the material.
+
+Review 5 (Professor: Mehdi Naderi Parizi, Rating: 2/5)
+The professor was not very helpful during office hours and just told us to "look at the textbook." CS 1301 is not hard but I felt unsupported when I got stuck. The TAs were much more helpful than the professor himself. The homework problems are fairly standard but some edge cases in the autograder are not well documented. Make sure you test your code with edge inputs before submitting — empty lists, negative numbers, that kind of thing. The course covers object-oriented basics at the end of the semester which is a preview of CS 1331.
+
+Review 6 (Anonymous, Rating: 4/5)
+I took CS 1301 online during a summer session. The pace was much faster than a regular semester — we covered a whole week of material every two days. Online students get recorded lectures which you can speed up, but I recommend taking notes as if it were live. The exams were proctored via Honorlock. The weekly coding labs online were actually well designed — each lab builds on the previous one so if you skip one you will struggle later. Python is a great first language and I felt prepared for CS 1331 afterward.
+
+Review 7 (Professor: Aibek Musaev, Rating: 4/5)
+The best part of CS 1301 is that Python lets you see results immediately without dealing with compilation errors. Musaev uses a lot of real-world examples — web APIs, file parsing, data visualization with matplotlib — which keeps the course interesting. The homework sets are clearly explained. The midterm I struggled with was the one on recursion and nested data structures. The professor posts practice exams on Canvas two weeks before each midterm. If you do all the practice exams under timed conditions you will be well prepared.
+
+Review 8 (Anonymous, Rating: 3/5)
+CS 1301 felt slow in the beginning if you already know how to code. The pace picks up significantly in the third and fourth weeks with functions and scope. Students with prior experience can complete homework in 20-30 minutes; beginners may need 3-4 hours. Graders are lenient about style as long as the output is correct. One thing I wish someone told me: use Python 3, not Python 2, and make sure your indentation is consistent — the autograder will fail your submission on indentation errors.

@@ -1,0 +1,65 @@
+Source: Reddit r/gatech — Thread: "How to survive CS 1332?"
+URL: https://www.reddit.com/r/gatech (manually collected, November 2024)
+Thread posted: Fall 2024
+
+---
+
+Post (u/data_struct_panic):
+Week 3 of CS 1332 and already feeling behind. Got destroyed on the first quiz about linked lists. What am I doing wrong?
+
+---
+
+Top comment (u/cs_1332_veteran, 934 upvotes):
+CS 1332 is the course that separates people who understand data structures from people who memorized syntax. Here's the mindset shift: for every data structure, understand the INVARIANTS — the conditions that must always be true. If you can state the invariant, implementing operations becomes straightforward because you just ask "what do I need to do to maintain the invariant after this operation?"
+
+Example — AVL tree invariant: every node's balance factor (left height minus right height) must be in {-1, 0, 1}. When you insert a node and a balance factor becomes ±2, you perform a rotation to restore this invariant. If you understand the invariant, you understand why rotations exist and how to choose the correct one.
+
+For linked lists: the invariant is that every node's next pointer correctly points to the following node (or null at the tail). When you remove a node, you must update the previous node's next pointer — failing to do so breaks the invariant and causes the removed node to still be reachable.
+
+---
+
+Comment (u/avl_tree_wizard):
+The AVL tree assignment is the hardest in CS 1332. Specific tips:
+
+1. Use the CS 1332 Visualizer (searchable on GitHub) to animate insertions and deletions before implementing. You need to SEE what a left rotation and right rotation look like.
+
+2. The four rotation cases: left-left (single right rotation), right-right (single left rotation), left-right (double: left rotation on child, then right rotation on parent), right-left (double: right rotation on child, then left rotation on parent).
+
+3. Update heights AFTER rotations, not before. Many students get the order wrong.
+
+4. The balance factor of a null node is defined as 0 (or the height of null is -1, depending on your convention — check the course convention carefully).
+
+5. Test your implementation with degenerate sequences: inserting [1, 2, 3, 4, 5] in order should trigger a series of rotations that keeps the tree balanced.
+
+---
+
+Comment (u/graph_algorithm_tips):
+For the graph algorithms section (the last 4 weeks):
+
+BFS uses a queue and finds the shortest path in unweighted graphs. DFS uses a stack (or recursion) and is used for cycle detection, topological sort, and SCC.
+
+Dijkstra's algorithm finds shortest paths in weighted graphs with non-negative weights. It uses a priority queue and runs in O((V + E) log V) with a min-heap. Bellman-Ford handles negative weights and runs in O(VE).
+
+Prim's algorithm finds the minimum spanning tree by greedily adding the minimum-weight edge that connects the MST to a new vertex. Kruskal's finds MST by sorting all edges and using Union-Find to avoid cycles. Both produce the same MST for a given graph but have different runtime profiles.
+
+The exam will definitely ask you to trace through Dijkstra's on a small graph. Practice this on paper.
+
+---
+
+Comment (u/cs1332_time_mgmt):
+Time management advice for CS 1332 homework:
+
+The autograder runs 100-200 test cases per assignment. Getting 80% of them to pass is usually achievable in 4-5 hours. Getting the last 20% (the edge cases) can take another 4-5 hours. Plan for 10 hours per assignment and start a week early.
+
+Submit early and often to the autograder. You have unlimited submissions. Each submission gives you a score, so you can track your progress and stop when you're satisfied (or when the deadline forces you to).
+
+The three hardest assignments: AVL tree, HashMap (with both linear probing and chaining), and the graph algorithms assignment (Dijkstra's + Prim's + Kruskal's). These are the ones to start earliest.
+
+---
+
+Comment (u/cs1332_exam_prep):
+CS 1332 exam 1 covers: arrays, ArrayLists, linked lists, stacks/queues, trees (BST and AVL). For the exam, you must be able to write Java code by hand (no IDE). Practice writing BST insert, BST remove (the three cases: leaf, one child, two children), AVL insert with rotation logic, and linked list operations.
+
+CS 1332 exam 2 covers: hash maps, skip lists, graph traversals, graph algorithms, and pattern matching. For the hash map section, know the difference between open addressing (linear probing, quadratic probing) and chaining, and know how deletion works in open addressing (use a DEL marker, not just null).
+
+Both exams have time complexity questions — expect to justify your answers with brief reasoning, not just state an answer.

@@ -1,0 +1,29 @@
+Source: Rate My Professors — Georgia Tech CS 1332 (Data Structures and Algorithms)
+URL: https://www.ratemyprofessors.com (manually collected, November 2024)
+Course: CS 1332 — Data Structures and Algorithms
+
+---
+
+Review 1 (Professor: Mary Hudachek-Buswell, Rating: 5/5)
+CS 1332 is a big jump from CS 1331. This course covers a huge breadth of data structures: arrays, linked lists, stacks, queues, trees (BSTs, AVL trees, heaps), hash maps, graphs, and pattern matching algorithms. Mary HB is an incredibly clear lecturer — she has visualizations for every data structure and you can really see how operations like AVL rotations work. Homework is done in Java with a Gradescope autograder. Each HW has 100+ test cases. Expect to spend 10-15 hours per week. The difficulty spike from CS 1331 is real — do not underestimate this course.
+
+Review 2 (Professor: Mary Hudachek-Buswell, Rating: 5/5)
+Professor HB makes a hard course approachable. She posts lecture videos on Canvas so you can rewatch confusing parts. The most important rule: understand the invariants of each data structure. For AVL trees, know the balance condition and how rotations restore it. For heaps, know the heap property. If you understand the invariants, the code writes itself. The TAs are excellent in CS 1332 — they run office hours for 20+ hours per week before deadlines. The TA-written visualizer tool (CS 1332 Visualizer) is essential for understanding how operations work step-by-step.
+
+Review 3 (Anonymous, Rating: 4/5)
+The grading in CS 1332 is unforgiving if your implementation has edge case bugs. The autograder runs hundreds of tests and even one off-by-one error can fail dozens of them. The recommended strategy is to write your own tests first — think about what edge cases the TA might test and test them yourself before submitting. Common edge cases: inserting into an empty structure, removing the only element, operating on a structure at maximum capacity. The exams are closed-book and require writing Java code by hand. Practice writing BST insertion/deletion and BFS/DFS by hand.
+
+Review 4 (Professor: Mary Hudachek-Buswell, Rating: 4/5)
+CS 1332 topics in order: arrays and ArrayLists, linked lists (singly and doubly), stacks and queues, iterators, trees (BST, AVL, heap), hash maps (open addressing and chaining), skip lists, graph algorithms (BFS, DFS, Dijkstra's, Prim's, Kruskal's), and pattern matching (KMP, Boyer-Moore, Rabin-Karp). This is a lot of material for one semester. The last few weeks on graphs and pattern matching are the densest. Study graph algorithms extra carefully before the final — they usually make up 25-30% of the final exam.
+
+Review 5 (Anonymous, Rating: 3/5)
+I got a C in CS 1332 my first time through and retook it with Professor HB the next semester. The difference in instruction quality was night and day. With HB, I finally understood why AVL rotations work the way they do and passed with an A-. My advice: do not take CS 1332 with a professor you haven't researched — look up reviews carefully. The content is challenging regardless, but a good professor makes it survivable. Also: use the CS 1332 visualizer website — it animates insertions, deletions, and rotations for every data structure covered in the course.
+
+Review 6 (Professor: Mary Hudachek-Buswell, Rating: 5/5)
+Grading breakdown: 50% homework (10-11 assignments), 20% exam 1, 20% exam 2, 10% final exam. Yes, the final is worth only 10% — the two midterms are where most of your grade is determined. Exam 1 covers arrays through trees; exam 2 covers hash maps through graphs. Both exams are 75 minutes, closed book, and require writing code in Java and answering conceptual questions (time complexity, invariant proofs). The homework can be brutal but the exams are fair if you study the visualizer and practice tracing through algorithms.
+
+Review 7 (Anonymous, Rating: 4/5)
+The hardest homework in CS 1332 is the AVL tree assignment. Getting left-right and right-left rotations right is genuinely tricky and the autograder mercilessly catches bugs. I recommend drawing out the rotation diagrams on paper and tracing through your code manually before submitting. The second hardest is the graph algorithms homework — implementing Dijkstra's with a priority queue has a lot of moving parts. Start both at least 4 days before the deadline. The TAs are most available the day before the deadline so plan your questions accordingly.
+
+Review 8 (Anonymous, Rating: 4/5)
+What separates CS 1332 from CS 1331 is that you can't just memorize syntax — you have to truly understand the algorithms. Time complexity analysis is tested on every exam. You should be able to give the time complexity of every operation (insert, delete, search) for every data structure we covered, and explain why. For HashMap: O(1) amortized for all operations assuming good hash distribution. For BST: O(h) where h is height, O(log n) average, O(n) worst case. For AVL tree: O(log n) guaranteed. Know these cold.

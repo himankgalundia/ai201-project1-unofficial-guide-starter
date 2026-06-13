@@ -1,0 +1,29 @@
+Source: Rate My Professors — Georgia Tech CS 4641 (Machine Learning)
+URL: https://www.ratemyprofessors.com (manually collected, November 2024)
+Course: CS 4641 — Machine Learning
+
+---
+
+Review 1 (Professor: Mahdi Roozbahani, Rating: 4/5)
+CS 4641 is one of the most popular CS electives at Georgia Tech. Professor Roozbahani (Mahdi) is enthusiastic and genuinely cares about students understanding the material. The course covers: supervised learning (linear regression, logistic regression, SVMs, decision trees, random forests, neural networks), unsupervised learning (k-means, PCA, GMMs), and reinforcement learning basics. The grading breakdown in Mahdi's section is approximately: 35% homework (4-5 assignments), 30% project (team), 15% midterm, 20% final. Python (numpy, sklearn, matplotlib) is used throughout.
+
+Review 2 (Professor: Mahdi Roozbahani, Rating: 5/5)
+The team project in CS 4641 is a significant part of your grade — about 25-30% of the total. Teams are groups of 3-4 students and you choose your own project topic (with instructor approval). Past teams have done projects on: predicting stock prices, classifying medical images, sentiment analysis of Reddit posts, and sports outcome prediction. The project has four deliverables: proposal, midpoint report, final report, and a 3-minute video presentation. Start forming your team and picking a topic in the first two weeks of the semester.
+
+Review 3 (Anonymous, Rating: 3/5)
+CS 4641 requires solid linear algebra and statistics background. If you haven't taken MATH 3215 (Probability & Statistics) or MATH 2406 (Abstract Vector Spaces), you will struggle with the mathematical derivations in the first few weeks. The homework assignments require implementing ML algorithms from scratch in Python — you cannot use sklearn for the core implementations (only for comparison). Implementing gradient descent, backpropagation, and the EM algorithm from scratch is where real understanding comes from. The autograder checks numerical output within a tolerance.
+
+Review 4 (Professor: Mahdi Roozbahani, Rating: 4/5)
+The homework assignments in Mahdi's CS 4641 are Jupyter notebooks submitted through Gradescope. Each one has a written portion (derivations, proof-of-concept) and a coding portion (implement and test the algorithm). The written portions are graded by TAs and require showing your math work clearly. Assignments cover: linear regression (gradient descent and closed-form), classification (logistic regression, SVM), neural networks (forward/backward pass), clustering (k-means, GMMs with EM), and dimensionality reduction (PCA). Each assignment takes 8-15 hours.
+
+Review 5 (Anonymous, Rating: 4/5)
+Exam tips for CS 4641: The midterm covers supervised learning (regression and classification). The final is cumulative but weighted toward the second half (neural networks, unsupervised learning, RL basics). Both exams have a math portion (derivations, gradient computation) and a conceptual portion (explain why, compare algorithms). One common exam question is: given a learning curve showing training and validation error, diagnose whether the model is underfitting or overfitting and suggest a fix. Another common type: compute the output of a small neural network by hand through one forward pass.
+
+Review 6 (Professor: Mahdi Roozbahani, Rating: 5/5)
+What makes CS 4641 valuable beyond the material itself is that Mahdi invites industry speakers every few weeks to talk about how ML is applied in practice. The course also has a Kaggle competition component (optional extra credit) where your team competes against other teams on a real dataset. The winner typically gets extra credit plus bragging rights. Participating in the Kaggle competition is strongly recommended even if you don't win — the iterative process of improving your model's performance is the best way to internalize cross-validation, hyperparameter tuning, and feature engineering.
+
+Review 7 (Anonymous, Rating: 3/5)
+CS 4641 workload is heavier than most people expect. Between homework, the team project, and exam prep, plan for 15-20 hours per week during heavy periods. The team project coordination adds overhead — make sure your team has clear roles and meets regularly. I've seen teams where one person does most of the work; don't let that happen to you or to your teammates. The final presentation video is only 3 minutes long but editing it well takes time. The course is absolutely worth taking if you want to go into ML/AI roles — it gives you a solid foundation that interviews will probe.
+
+Review 8 (Anonymous, Rating: 4/5)
+CS 4641 prerequisites: officially CS 1332 and MATH 3215. In practice, you also need comfort with Python, numpy, and linear algebra (matrix operations, eigenvectors). Students who struggle most are those who are weak on linear algebra — SVMs, PCA, and neural network math all rely heavily on it. I recommend reviewing matrix multiplication, dot products, eigenvector decomposition, and the chain rule for derivatives before the semester begins. The first homework is due the second week so there's no warm-up period. Come prepared.

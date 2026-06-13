@@ -1,0 +1,61 @@
+Source: Reddit r/gatech — Thread: "Complete CS survival guide for freshmen and transfer students"
+URL: https://www.reddit.com/r/gatech (manually collected, November 2024)
+Thread posted: August 2024
+
+---
+
+Post (u/gatech_cs_guide):
+Compiled this guide after 3 years of CS at Tech. Hope it helps incoming students.
+
+---
+
+**Georgia Tech CS Degree — Unofficial Survival Guide**
+
+**Courseload advice:**
+
+Don't take CS 1301 + CS 1331 in the same semester if you're new to programming. CS 1301 teaches Python; CS 1331 assumes you already know programming. Taking them simultaneously means you're learning two languages at once, which is confusing. Take CS 1301 first, then CS 1331.
+
+The hardest semester in the CS core for most students is the one where you take CS 1332 + CS 2200 simultaneously. Both courses have significant weekly coding projects in different languages (Java and C respectively). If you must take them together, reduce your other course load or prepare for a very difficult semester.
+
+CS 3510 (Algorithms) should be taken after CS 1332 and MATH 3012 (Combinatorics). CS 3510 assumes comfort with proofs, asymptotic notation, and basic data structure operations. Taking it too early is a common reason students get Ws or Ds.
+
+**Study strategies that work at GT:**
+
+1. Office hours over solo grinding: GT professors and TAs hold significant office hours. Use them early (before the deadline week when lines are long). Going to office hours when you're 50% through a problem (not 0% and not 100%) is the ideal — you've thought enough to have a specific question.
+
+2. Use past exams: GT professors recycle problem styles. Past exams are posted on course websites or on the T-Square/Canvas course archive. Doing every past exam under timed conditions is more valuable than re-reading your notes.
+
+3. Study groups for theory courses: CS 3510 and CS 4641 benefit enormously from study groups. Explaining an algorithm to someone else reveals holes in your own understanding faster than any other method.
+
+4. Spaced repetition for algorithms: For CS 3510 and CS 1332, write algorithm implementations and proofs without looking at your notes, then check. Identifying what you couldn't reproduce is exactly what you need to study.
+
+**Tools every CS student at GT should know:**
+
+- IntelliJ IDEA: Best Java IDE for CS 1331 and CS 1332. The free Community Edition is sufficient.
+- VS Code: Best for Python (CS 1301, CS 4641), C (CS 2200), and everything else.
+- gdb: Debugger for C programs. Essential for CS 2200. Learn it before the first project.
+- Valgrind: Memory leak checker for C. Run Valgrind on every CS 2200 project before submitting.
+- Git: Version control. Even for solo projects, commit your work every few hours so you can roll back if you break something.
+- Gradescope: Where almost every course submits and grades assignments. Understand how autograder error messages work.
+
+**Mental health and workload:**
+
+GT is academically intense. CS in particular has a reputation for high workload. Some honest advice:
+
+- The median grade at GT is not an A. Many top students from high school find their first B or C at GT. This is normal and expected.
+- Withdrawal (W) is not a failure. Taking a W in a course you're at risk of failing is often better than a C or D that tanks your GPA and your understanding of prerequisite material.
+- Sleep deprivation is not a badge of honor. Consistently sleeping less than 6 hours significantly impairs memory consolidation and problem-solving ability. All-nighters hurt more than they help.
+- The Academic Assistance Center (AAC), CARE, and the Counseling Center are free resources. Use them.
+
+**Choosing electives:**
+
+Popular CS electives ranked by student satisfaction:
+1. CS 4641 (Machine Learning) — practical, relevant, good for industry
+2. CS 4400 (Intro to Database Systems) — essential for any backend role
+3. CS 4240 (Compilers) — challenging but intellectually rewarding
+4. CS 4731 (Computer Graphics) — fun if you like visual output
+5. CS 4235 (Intro to Information Security) — foundational for security roles
+
+**Internship advice:**
+
+Start applying for internships in October of your sophomore year. Internship recruiting at top tech companies follows the academic calendar, not your graduation date. A sophomore with CS 1332 and one elective is competitive for many internships. Technical interview prep: do LeetCode easy and medium problems, study system design basics (for junior+ roles), and practice explaining your thought process out loud.
